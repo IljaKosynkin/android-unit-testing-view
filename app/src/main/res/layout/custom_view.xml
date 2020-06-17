@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:layout_width="match_parent"
+    tools:layout_height="match_parent"
+    tools:parentTag="com.syllogismobile.unittestingview.CustomView">
+
+    <TextView android:id="@+id/fact"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="@dimen/default_text_size"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_weight="8"
+        android:ellipsize="end"
+        tools:text="A cat's jaw has only up and down motion; it does not have any lateral, side to side motion, like dogs and humans."/>
+
+    <TextView android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_weight="1"
+        tools:text="1"/>
+
+    <Button android:id="@+id/likeButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_gravity="bottom"
+        android:text="@string/like" />
+</merge>
